@@ -1,9 +1,10 @@
-# -*- coding: utf-8 -*-
+# Section 1
 """
 Spyder Editor
 Smuch!
 This is a temporary script file.
 """
+# Section 1.4
 #%% Test NP
 import numpy as np
 x = np.array([[1,2,3],[4,5,6]])
@@ -22,7 +23,12 @@ col_indices = np.arange(4)
 eye_coo = sparse.coo_matrix((data,(row_indices,col_indices)))
 print("COO :\n {}".format(eye_coo))
 #%% Test Matplotlib 
+import matplotlib.pyplot as plt
+x = np.linspace(-10,10,100)
+y=np.sin(x)
+plt.plot(x,y,marker="x",color="black")
+#%% Test Pandas
 
 
 
-#%%
+#%% 
